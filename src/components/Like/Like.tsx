@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppDispatch } from "../../hooks/redux";
 import { IUser } from "../../models/IUser";
 import { addLike, removeLike } from "../../store/reducers/usersSlice";

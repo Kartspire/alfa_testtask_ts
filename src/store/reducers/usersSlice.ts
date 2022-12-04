@@ -3,14 +3,12 @@ import { IUser } from "../../models/IUser";
 
 interface IUsers {
   users: IUser[];
-  filteredUsers: IUser[];
   filter: boolean;
   error: string;
 }
 
 const initialState: IUsers = {
   users: [],
-  filteredUsers: [],
   filter: false,
   error: "",
 };
@@ -27,12 +25,6 @@ export const usersSlice = createSlice({
       state.error = action.payload;
     },
     addLike(state, action: PayloadAction<number>) {
-      state.filteredUsers.map((el) => {
-        if (el.id === action.payload) {
-          el.liked = true;
-        }
-        return el;
-      });
       state.users.map((el) => {
         if (el.id === action.payload) {
           el.liked = true;
@@ -41,12 +33,6 @@ export const usersSlice = createSlice({
       });
     },
     removeLike(state, action: PayloadAction<number>) {
-      state.filteredUsers.map((el) => {
-        if (el.id === action.payload) {
-          el.liked = false;
-        }
-        return el;
-      });
       state.users.map((el) => {
         if (el.id === action.payload) {
           el.liked = false;
@@ -55,13 +41,9 @@ export const usersSlice = createSlice({
       });
     },
     removeUser(state, action: PayloadAction<number>) {
-      state.filteredUsers = state.filteredUsers.filter(
-        (el) => el.id !== action.payload
-      );
       state.users = state.users.filter((el) => el.id !== action.payload);
     },
     showLiked(state) {
-      state.filteredUsers = state.users.filter((el) => el.liked);
       state.filter = !state.filter;
     },
   },

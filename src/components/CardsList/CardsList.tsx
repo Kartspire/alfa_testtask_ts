@@ -8,14 +8,14 @@ interface ICardsListProps {
 }
 
 export const CardsList = React.memo(({ users }: ICardsListProps) => {
-  const filteredUsers = useAppSelector((state) => state.users.filteredUsers);
   const filter = useAppSelector((state) => state.users.filter);
+  const likedUsers = users.filter((el) => el.liked);
 
   return (
     <ul>
       {filter ? (
-        filteredUsers.length > 0 ? (
-          filteredUsers.map((user) => <Card key={user.id} user={user} />)
+        likedUsers.length > 0 ? (
+          likedUsers.map((user) => <Card key={user.id} user={user} />)
         ) : (
           <div>Упс! У вас нет избранных персонажей</div>
         )

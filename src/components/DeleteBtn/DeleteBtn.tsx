@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { IUser } from "../../models/IUser";
 import { removeUser } from "../../store/reducers/usersSlice";

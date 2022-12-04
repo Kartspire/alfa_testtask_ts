@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { fetchUsers } from "./asyncActions/users";
 import { Loader } from "./components/Loader";
 import { Filter } from "./components/Filter";
