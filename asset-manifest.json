@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/alfa_testtask_ts/static/css/main.a2f01da8.css",
-    "main.js": "/alfa_testtask_ts/static/js/main.df40d1ab.js",
-    "index.html": "/alfa_testtask_ts/index.html",
-    "main.a2f01da8.css.map": "/alfa_testtask_ts/static/css/main.a2f01da8.css.map",
-    "main.df40d1ab.js.map": "/alfa_testtask_ts/static/js/main.df40d1ab.js.map"
+    "main.css": "/rick-morty_characters/static/css/main.edcdddaf.css",
+    "main.js": "/rick-morty_characters/static/js/main.2dd93aa9.js",
+    "index.html": "/rick-morty_characters/index.html",
+    "main.edcdddaf.css.map": "/rick-morty_characters/static/css/main.edcdddaf.css.map",
+    "main.2dd93aa9.js.map": "/rick-morty_characters/static/js/main.2dd93aa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2f01da8.css",
-    "static/js/main.df40d1ab.js"
+    "static/css/main.edcdddaf.css",
+    "static/js/main.2dd93aa9.js"
   ]
 }
