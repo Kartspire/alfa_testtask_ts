@@ -2,7 +2,7 @@
   "name": "alfa_testtask_ts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Kartspire.github.io/alfa_testtask_ts",
+  "homepage": "https://Kartspire.github.io/rick-morty_characters",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
